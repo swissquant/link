@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "link"
+version = "1.0.0"
+description = "Internal asynchronous Pub/Sub for Python"
+packages = [
+    { include = "link" },
+]
+authors = ["Rico <rico@nemo.ventures>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+loguru = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^5.0.4"
+black = "^22.6.0"
+mypy = "^0.971"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py39']
+line-length = 120
+exclude = '''
+/(
+    \.git
+  | \.pytest_cache
+  | \.venv
+  | __pycache
+)/
+'''

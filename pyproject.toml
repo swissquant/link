@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "link"
-version = "1.0.1"
+version = "1.0.2"
 description = "Internal asynchronous Pub/Sub for Python"
 packages = [
     { include = "link" },
@@ -8,7 +8,7 @@ packages = [
 authors = ["Rico <rico@nemo.ventures>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 loguru = "^0.6.0"
 
 [tool.poetry.dev-dependencies]
